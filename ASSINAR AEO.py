@@ -11,9 +11,10 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import NoSuchElementException
 from selenium.common.exceptions import ElementClickInterceptedException
 import getpass
-import time 
-import dados
+import time
 
+usuario = "T56827"
+senha = "5c!gt6EuVnnGgB8"
 
 def login(usuario, senha):
     campo_do_usuario = wait.until(EC.element_to_be_clickable((By.ID, "txtLogin")))
@@ -77,7 +78,7 @@ wait = WebDriverWait(navegador, 20)
 navegador.get(site)
 navegador.maximize_window()
 
-login(dados.usuario, dados.senha)
+login(usuario, senha)
 
 engenharia = aguardar((By.XPATH, '//*[@id="sidebar"]/ul/li[1]/a'))
 
