@@ -1,0 +1,4 @@
+feito - 0
+Hora inicial = 12:32:16
+Hora Final = 12:35:53
+Tempo Decorrido = 0:4:37

@@ -13,9 +13,6 @@ from selenium.common.exceptions import ElementClickInterceptedException
 import getpass
 import time
 
-usuario = "T56827"
-senha = "5c!gt6EuVnnGgB8"
-
 def login(usuario, senha):
     campo_do_usuario = wait.until(EC.element_to_be_clickable((By.ID, "txtLogin")))
     campo_do_usuario.send_keys(usuario)
@@ -69,9 +66,11 @@ servico = Service(ChromeDriverManager().install())
 navegador = webdriver.Chrome(service=servico)
 
 site = "http://10.1.1.80:8083/#/login"
-usuario = getpass.getuser()
-arquivo = f'C:\\Users\\{usuario}\\Dropbox\\PYTHON\\BOT TELEGRAM\\texto.txt'
+pc = getpass.getuser()
+arquivo = f'C:\\Users\\{pc}\\Dropbox\\PYTHON\\BOT TELEGRAM\\texto.txt'
 nota_status = [ ]
+usuario = "T56827"
+senha = "5c!gt6EuVnnGgB8"
 
 wait = WebDriverWait(navegador, 20)
 
