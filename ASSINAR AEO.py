@@ -1,3 +1,6 @@
+# Criado por: F. Wellisson
+# Data: 29/05/2026
+
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
